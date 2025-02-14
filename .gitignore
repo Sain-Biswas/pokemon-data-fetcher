@@ -101,32 +101,13 @@ web_modules/
 # dotenv environment variable files
 
 .env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
+.env.*
+!.env.sample
 
 # parcel-bundler cache (https://parceljs.org/)
 
 .parcel-cache
 
-# Next.js build output
-
-.next
-out
-
-# Nuxt.js build / generate output
-
-.nuxt
-dist
-
-# Gatsby files
-
-# Comment in the public line in if your project uses Gatsby and not Next.js
-
-# https://nextjs.org/blog/next-9-1#public-directory-support
-
-# public
 
 # vuepress build output
 
@@ -156,11 +137,12 @@ dist
 
 .tern-port
 
-# Stores VSCode versions used for testing VSCode extensions
-.vscode-test
+# VSCode files
+.vscode/
 
-# VSCode settings
-.vscode
+# Stores VSCode versions used for testing VSCode extensions
+
+.vscode-test
 
 # yarn v2
 
@@ -175,3 +157,9 @@ dist
 
 # Finder (MacOS) folder config
 .DS_Store
+
+# Project created cache/dist/output files
+migrations/
+*.db
+*.sh
+test.json
