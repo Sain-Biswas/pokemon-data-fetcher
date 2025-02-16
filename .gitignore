@@ -162,4 +162,5 @@ web_modules/
 migrations/
 *.db
 *.sh
+!setup.sh
 test.json
