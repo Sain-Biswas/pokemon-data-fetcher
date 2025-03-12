@@ -3,6 +3,7 @@ import * as abilityOnFlavorText from "./ability-on-flavor-text.schema";
 import * as ability from "./ability.schema";
 import * as contestEffect from "./contest-effect.schema";
 import * as contestType from "./contest-type.schema";
+import * as dataView from "./data.view";
 import * as eggGroup from "./egg-group.schema";
 import * as evolutionDetails from "./evolution-details.schema";
 import * as generation from "./generation.schema";
@@ -32,6 +33,7 @@ export default {
   ...ability,
   ...contestEffect,
   ...contestType,
+  ...dataView,
   ...eggGroup,
   ...evolutionDetails,
   ...generation,
