@@ -5,7 +5,6 @@ import { pokemonSchema } from "../drizzle/schema/pokemon.schema";
 
 async function pokemonCardDetails() {
   const data = await db.query.pokemonSchema.findMany({
-    where: eq(pokemonSchema.index, 6),
     columns: {
       id: true,
       index: true,
@@ -49,6 +48,7 @@ async function pokemonCardDetails() {
         },
       },
     },
+    orderBy: [pokemonSchema.index],
   });
 
   return data.map((pokemon) => ({
@@ -89,4 +89,3 @@ async function pokemonCardDetails() {
 
   await write("test.json", JSON.stringify(data));
 })();
-
