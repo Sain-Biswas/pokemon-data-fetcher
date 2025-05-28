@@ -3,19 +3,13 @@ import { versionGroupSchema } from "./version-group.schema";
 import { movesSchema } from "./moves.schema";
 import { relations } from "drizzle-orm";
 
-export const movesOnFlavorTextSchema = sqliteTable(
-  "MOVES_ON_FLAVOR_TEXT",
-  {
-    versionGroupReference: text("VERSION_GROUP_REFERENCE").references(
-      () => versionGroupSchema.id
-    ),
-    moveReference: text("MOVE_REFERENCE").references(() => movesSchema.id),
-    flavorText: text("FLAVOR_TEXT"),
-  },
-  (t) => ({
-    pk: primaryKey({ columns: [t.moveReference, t.versionGroupReference] }),
-  })
-);
+export const movesOnFlavorTextSchema = sqliteTable("MOVES_ON_FLAVOR_TEXT", {
+  versionGroupReference: text("VERSION_GROUP_REFERENCE").references(
+    () => versionGroupSchema.id
+  ),
+  moveReference: text("MOVE_REFERENCE").references(() => movesSchema.id),
+  flavorText: text("FLAVOR_TEXT"),
+});
 
 export const movesOnFlavorTextRelations = relations(
   movesOnFlavorTextSchema,
@@ -30,4 +24,3 @@ export const movesOnFlavorTextRelations = relations(
     }),
   })
 );
-
