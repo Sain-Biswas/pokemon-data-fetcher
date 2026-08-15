@@ -1,55 +1,55 @@
 {
-    "$schema": "https://www.schemastore.org/tsconfig",
+	"$schema": "https://www.schemastore.org/tsconfig",
 
-    "compilerOptions": {
-        /* Type Checking */
-        "allowUnreachableCode": false,
-        "allowUnusedLabels": false,
-        "exactOptionalPropertyTypes": true,
-        "noFallthroughCasesInSwitch": true,
-        "noImplicitOverride": true,
-        "noImplicitReturns": true,
-        "noPropertyAccessFromIndexSignature": true,
-        "noUncheckedIndexedAccess": true,
-        "noUnusedLocals": true,
-        "noUnusedParameters": true,
-        "strict": true,
+	"compilerOptions": {
+		/* Type Checking */
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"exactOptionalPropertyTypes": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"strict": true,
 
-        /* Modules */
-        "module": "esnext",
-        "moduleResolution": "bundler",
+		/* Modules */
+		"module": "esnext",
+		"moduleResolution": "bundler",
 
-        /* Paths */
-        "paths": {
-            "~/*": ["./src/*"]
-        },
-        "resolveJsonModule": true,
-        "rewriteRelativeImportExtensions": true,
+		/* Paths */
+		"paths": {
+			"~/*": ["./src/*"]
+		},
+		"resolveJsonModule": true,
+		"rewriteRelativeImportExtensions": true,
 
-        /* Emit */
-        "noEmit": true,
+		/* Emit */
+		"noEmit": true,
 
-        /* Javascript Support */
-        "allowJs": true,
-        "checkJs": true,
+		/* Javascript Support */
+		"allowJs": true,
+		"checkJs": true,
 
-        /* Editor Support */
+		/* Editor Support */
 
-        /* Interop Constraints */
-        "erasableSyntaxOnly": true,
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
-        "verbatimModuleSyntax": true,
+		/* Interop Constraints */
+		"erasableSyntaxOnly": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"verbatimModuleSyntax": true,
 
-        /* Backwards Compatibility */
+		/* Backwards Compatibility */
 
-        /* Language and Environment */
-        "jsx": "react-jsx",
-        "lib": ["ESNext", "DOM", "DOM.Iterable"],
-        "moduleDetection": "force",
-        "target": "esnext",
+		/* Language and Environment */
+		"jsx": "react-jsx",
+		"lib": ["ESNext", "DOM", "DOM.Iterable"],
+		"moduleDetection": "force",
+		"target": "esnext",
 
-        /* Completeness */
-        "skipLibCheck": true
-    }
+		/* Completeness */
+		"skipLibCheck": true
+	}
 }
