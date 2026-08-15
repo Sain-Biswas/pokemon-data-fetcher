@@ -1,5 +1,5 @@
 import { describe, expect, it } from "bun:test";
-import { APIResourceListZodSchema } from "~/validators/resource-lists/api-resource-list.zod";
+import { APIResourceListZodSchema } from "~/validators/resource-lists/unnamed.zod";
 import { fetch } from "bun";
 import { z } from "zod";
 
