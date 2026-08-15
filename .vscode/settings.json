@@ -1,0 +1,7 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.oxc": "always"
+    },
+
+    "cSpell.words": ["tsgolint"]
+}
