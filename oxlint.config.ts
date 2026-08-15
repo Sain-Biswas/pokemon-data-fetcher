@@ -33,6 +33,7 @@ export default defineConfig({
 		"import/no-cycle": "error",
 		"import/no-named-export": "off",
 		"import/prefer-default-export": "off",
+		"no-magic-numbers": "off",
 		"one-var": "off",
 		"promise/catch-or-return": "error",
 		"promise/no-callback-in-promise": "warn",

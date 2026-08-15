@@ -1,4 +1,4 @@
-import { APIResourceZodSchema } from "~/validators/common/api-resource.zod";
+import { APIResourceZodSchema } from "~/validators/utility/common-models.zod";
 
 import { z } from "zod";
 

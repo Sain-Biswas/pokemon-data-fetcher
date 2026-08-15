@@ -1,4 +1,4 @@
-import { NamedAPIResourceZodSchema } from "~/validators/common/named-api-resource.zod";
+import { NamedAPIResourceZodSchema } from "~/validators/utility/common-models.zod";
 
 import { z } from "zod";
 
