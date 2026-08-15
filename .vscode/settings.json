@@ -3,5 +3,17 @@
 		"source.fixAll.oxc": "always"
 	},
 
-	"cSpell.words": ["Alolan", "firmnesses", "Meowth", "overworld", "Perrserker", "Poffins", "Pokéblocks", "tsgolint"]
+	"cSpell.words": [
+		"Alolan",
+		"firmnesses",
+		"Meowth",
+		"overworld",
+		"Perrserker",
+		"Poffins",
+		"Pokéblocks",
+		"Pokédex",
+		"Pokédexes",
+		"travelled",
+		"tsgolint"
+	]
 }
