@@ -1,0 +1,6 @@
+[test]
+root = "test"
+smol = true
+randomize = true
+coverage = true
+coverageReporter = "text"
