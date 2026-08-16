@@ -58,7 +58,7 @@ const ItemZodSchema = z.object({
 	fling_power: z.number().int().nullable().describe("The power of the move Fling when used with this item."),
 	game_indices: z
 		.array(GenerationGameIndexZodSchema)
-		.describe("A list of game indices relevent to this item by generation."),
+		.describe("A list of game indices relevant to this item by generation."),
 	held_by_pokemon: z
 		.array(ItemHolderPokemonZodSchema)
 		.describe("A list of Pokémon that might be found in the wild holding this item."),
