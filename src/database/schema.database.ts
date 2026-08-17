@@ -1,4 +1,4 @@
 /**
  * UTILITY
  */
-export * from "~/database/schemas/utility/languages.schema"
+export * from "~/database/schemas/utility/languages.schema";
