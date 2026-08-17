@@ -21,7 +21,7 @@ const languagesTable = sqliteTable(
  * The name of [targetLanguage] written in [localizedInLanguage]
  */
 const languagesNamesTable = sqliteTable(
-	"languages_name",
+	"ex_languages_name",
 	(table) => ({
 		local_language_name: table
 			.text("local_language_name")
@@ -40,7 +40,5 @@ const languagesNamesTable = sqliteTable(
 		})
 	]
 );
-
-export type LanguagesNamesTableInsertType = typeof languagesNamesTable.$inferInsert;
 
 export { languagesTable, languagesNamesTable };

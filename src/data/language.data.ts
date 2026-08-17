@@ -1,8 +1,7 @@
 import { database } from "~/database/index.database";
 
-const fetchLanguageData = async ({ lang = "en" }: { lang?: string }) =>
-	{
-        const response = await database.query.languagesTable.findFirst({
+const fetchLanguageData = async ({ lang = "en" }: { lang?: string }) => {
+	const response = await database.query.languagesTable.findFirst({
 		where: { name: { eq: lang } },
 		with: {
 			names: {
@@ -15,16 +14,16 @@ const fetchLanguageData = async ({ lang = "en" }: { lang?: string }) =>
 				}
 			}
 		}
-	})
+	});
 
-    return {
-        ...response,
-        names: response?.names.map((name) => ({
-            local_language: name.localLanguage?.names.at(0)?.name,
-            name: name.name
-        }))
-    }
-}
+	return {
+		...response,
+		names: response?.names.map((name) => ({
+			local_language: name.localLanguage?.names.at(0)?.name,
+			name: name.name
+		}))
+	};
+};
 
 const data = await fetchLanguageData({});
 
