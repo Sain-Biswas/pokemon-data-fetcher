@@ -1,0 +1,6 @@
+import { Database } from '@tursodatabase/database';
+import { drizzle } from 'drizzle-orm/tursodatabase/database';
+
+const client = new Database(process.env['DATABASE_FILE_NAME']!);
+
+export const database = drizzle({ client });

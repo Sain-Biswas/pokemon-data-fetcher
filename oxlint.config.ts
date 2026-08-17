@@ -41,6 +41,7 @@ export default defineConfig({
 		"typescript/consistent-type-imports": "warn",
 		"typescript/no-floating-promises": "error",
 		"typescript/no-misused-promises": "error",
-		"typescript/no-unnecessary-condition": "warn"
+		"typescript/no-unnecessary-condition": "warn",
+		"typescript/prefer-readonly-parameter-types": "allow"
 	}
 });
