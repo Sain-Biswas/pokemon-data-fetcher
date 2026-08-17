@@ -18,18 +18,18 @@ const languages = await Promise.all(
 );
 
 const languageRecords = languages.map((language) => ({
-	id: language.name,
-	index: language.id,
+	id: language.id,
 	iso3166: language.iso3166,
 	iso639: language.iso639,
+	name: language.name,
 	official: language.official
 }));
 
 const nameRecords: LanguagesNamesTableInsertType[] = languages.flatMap((language) =>
 	language.names.map((name) => ({
-		localLanguageId: name.language.name,
+		local_language_name: name.language.name,
 		name: name.name,
-		targetLanguageId: language.name
+		target_language_name: language.name
 	}))
 );
 

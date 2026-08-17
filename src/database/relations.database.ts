@@ -6,12 +6,12 @@ export const relations = defineRelations(schema, (relation) => ({
 	/* UTILITY */
 	languagesNamesTable: {
 		localLanguage: relation.one.languagesTable({
-			from: relation.languagesNamesTable.localLanguageId,
+			from: relation.languagesNamesTable.local_language_name,
 			to: relation.languagesTable.id
 		}),
 
 		targetLanguage: relation.one.languagesTable({
-			from: relation.languagesNamesTable.targetLanguageId,
+			from: relation.languagesNamesTable.target_language_name,
 			to: relation.languagesTable.id
 		})
 	},
@@ -19,12 +19,12 @@ export const relations = defineRelations(schema, (relation) => ({
 	languagesTable: {
 		names: relation.many.languagesNamesTable({
 			from: relation.languagesTable.id,
-			to: relation.languagesNamesTable.targetLanguageId
+			to: relation.languagesNamesTable.target_language_name
 		}),
 
 		translationsProvided: relation.many.languagesNamesTable({
 			from: relation.languagesTable.id,
-			to: relation.languagesNamesTable.localLanguageId
+			to: relation.languagesNamesTable.local_language_name
 		})
 	}
 }));
